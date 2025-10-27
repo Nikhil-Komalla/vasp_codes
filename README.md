@@ -21,4 +21,4 @@ Set the variables at the top of the script:
 
 ## Usage
 
-Run the script with: 'bash wait_run.sh'
+Run the script with: `bash wait_run.sh`
