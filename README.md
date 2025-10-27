@@ -1,4 +1,4 @@
-# wait_run.sh
+#1. wait_run.sh
 
 Automated VASP job submission script with file upload verification.
 
