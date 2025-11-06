@@ -19,6 +19,7 @@ To plot Partial and Total Density of States (PDOS/TDOS) from VASP outputs with s
 - Run the script with: `python DOS_plotter.py`
 - use `help` command for detailed instructions on plotting options
 
+Ref: [https://github.com/nishantaMishra/](url) OR [https://github.com/nishantaMishra/BatteryInformatics/tree/main/DOS-plots/PDOS](url)
 
 ## 3. wait_run.sh
 
