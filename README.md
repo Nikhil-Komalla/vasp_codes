@@ -7,7 +7,7 @@ To plot Partial and Total Density of States (PDOS/TDOS) from VASP outputs with s
 - Clean plots without Fermi level line
 - Customizable color schemes and interactive color picker
 - Bandgap detection and reporting
-- 
+  
 #### Requirements
 - `vaspkit` (required for generating PDOS/TDOS files if not present)
 - Python & Python packages: `matplotlib`, `numpy`, `pyyaml`
