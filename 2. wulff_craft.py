@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 prim = read('POSCAR', format='vasp')
 
-surface_energies = {(0, 0, 1): 0.84,
+surface_energies = {(0, 0, 1): 1.00,
 (0, 1,1): 1.51,
 (1, 1, 1): 1.19}
 
