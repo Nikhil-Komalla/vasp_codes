@@ -1,4 +1,6 @@
 # Working as intended on Mon Nov  3 09:29:20 PM EST 2025
+# Developed by https://github.com/nishantaMishra
+# Customized with d_band center by https://github.com/Nikhil-Komalla
 # The program expects vaspkit installed in the system.
 
 #------------ Dependency check ----------
@@ -536,10 +538,16 @@ def plot_pdos(pdos_files, plotting_info, title, spin_filter=None, fill=False, lo
                         else:
                             plt.plot(x, y, label=label, color=color, linestyle=linestyle)
 
-    # Ask user for the x-coordinate to place the vertical line
-    d_bandcenter = float(input("Enter the d band center value (e.g. -2.39): "))
-
-    plt.axvline(d_bandcenter, color='black', linestyle='--')
+    # Ask user for the d_band center (x-coordinate) to place the vertical line
+    try:
+        d_bandcenter_input = input("Enter the d band center value (e.g. -2.39), or press Enter to skip: ").strip()
+        if d_bandcenter_input:
+            d_bandcenter = float(d_bandcenter_input)
+            plt.axvline(d_bandcenter, color='black', linestyle='--')
+        else:
+            print("Skipping d band center plotting.")
+    except ValueError:
+        print("Invalid input for d band center. Skipping plotting this line.")
 
     plt.axhline(0, color='black', linestyle='-')
 
