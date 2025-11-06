@@ -1,4 +1,26 @@
-## 1. wait_run.sh
+## 1. DOS_plotter.py
+To plot Partial and Total Density of States (PDOS/TDOS) from VASP outputs with spin filtering and d-band center option.
+
+#### Features
+- Optional d-band center vertical line (user input, can be skipped)
+- PDOS plotting with spin filter (spin up/down)
+- Clean plots without Fermi level line
+- Customizable color schemes and interactive color picker
+- Bandgap detection and reporting
+- 
+#### Requirements
+- `vaspkit` (required for generating PDOS/TDOS files if not present)
+- Python & Python packages: `matplotlib`, `numpy`, `pyyaml`
+  
+#### Recommendation
+- Install `PyQt5` for enhanced Matplotlib interactivity and more plotting options:
+
+#### Usage
+- Run the script with: `python DOS_plotter.py`
+- use `help` command for detailed instructions on plotting options
+
+
+## 3. wait_run.sh
 
 Automated VASP job submission script with file upload verification.
 
